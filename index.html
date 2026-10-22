@@ -53,6 +53,15 @@ section[id] { scroll-margin-top: 60px; }
     text-decoration: none; transition: opacity .2s;
   }
   .nav-cta:hover { opacity: .85; }
+   .nav-links { display: flex; gap: 1.6rem; }
+  .nav-links a {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    font-family: 'DM Sans', sans-serif; padding: 4px 0;
+    border-bottom: 1px solid transparent; transition: color .2s, border-color .2s;
+  }
+  .nav-links a:hover { color: #fff; border-bottom-color: var(--or); }
+  @media (max-width: 1100px) { .nav-links { display: none; } }
 
   /* ─── BLOC TITRE (charte graphique) ──────────── */
   .bloc-titre { display: inline-flex; flex-direction: column; }
@@ -547,7 +556,14 @@ section[id] { scroll-margin-top: 60px; }
 <!-- ─── NAV ─────────────────────────────────────── -->
 <nav>
   <div class="nav-logo">Le Vestiaire &nbsp;<strong>des Femmes Dirigeantes</strong></div>
-  <a class="nav-cta" href="#inscription">Demander un entretien</a>
+    <div class="nav-links">
+    <a href="#projet">Le projet</a>
+    <a href="#programme">Programme</a>
+    <a href="#lieu">Le lieu</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#initiatrices">Initiatrices</a>
+  </div>
+ <a class="nav-cta" href="#inscription">Demander un entretien</a>
 </nav>
 
 
